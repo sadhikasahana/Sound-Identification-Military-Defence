@@ -209,3 +209,7 @@ __marimo__/
 
 # Project Specific Ignores
 data/
+data/generated/
+data/splits/*.csv
+!data/splits/split.csv
+models/

@@ -1,0 +1,90 @@
+{
+  "SEED": 42,
+  "CLASSES": [
+    "drone",
+    "gunshot",
+    "jetplane",
+    "vehicle"
+  ],
+  "NUM_CLASSES": 4,
+  "CLASS_DESCRIPTIONS": {
+    "drone": "Unmanned Aerial Vehicle (UAV) \u2014 rotor/buzzing sounds",
+    "gunshot": "Firearm discharge \u2014 impulsive broadband sound",
+    "jetplane": "Jet aircraft engine \u2014 sustained high-energy sound",
+    "vehicle": "Ground vehicle engine \u2014 cars, trucks, military vehicles"
+  },
+  "CLASS_COLORS": {
+    "drone": "#2196F3",
+    "gunshot": "#F44336",
+    "jetplane": "#4CAF50",
+    "vehicle": "#FF9800"
+  },
+  "SR": 22050,
+  "DURATION": 6,
+  "SAMPLES": 132300,
+  "N_MELS": 128,
+  "N_FFT": 2048,
+  "HOP_LENGTH": 512,
+  "BATCH_SIZE": 8,
+  "EPOCHS": 25,
+  "LEARNING_RATE": 0.0005,
+  "THRESHOLD": 0.5,
+  "LABEL_SMOOTHING": 0.1,
+  "MIXUP_ALPHA": 0.3,
+  "L2_REG": 0.0001,
+  "MIN_GAIN": 0.08,
+  "MAX_GAIN": 0.7,
+  "MIN_SNR": -5,
+  "MAX_SNR": 10,
+  "MIN_EVENT_SEC": 0.3,
+  "MAX_EVENT_SEC": 3.0,
+  "MIN_CLASSES_MIX": 1,
+  "MAX_CLASSES_MIX": 4,
+  "NUM_MIXES_TRAIN": 3000,
+  "NUM_MIXES_VAL": 600,
+  "NUM_MIXES_TEST": 600,
+  "HARD_RATIO_TRAIN": 0.4,
+  "HARD_RATIO_TEST": 0.5,
+  "NUM_STRESS_TEST": 300,
+  "RAW_DATASET": "S:\\Sound-Identification-Military-Defence\\data\\raw",
+  "PROCESSED_DATASET": "S:\\Sound-Identification-Military-Defence\\data\\processed",
+  "NOISE_DIR": "S:\\Sound-Identification-Military-Defence\\data\\noise",
+  "GENERATED_ROOT": "S:\\Sound-Identification-Military-Defence\\data\\generated",
+  "STRESS_TEST_DIR": "S:\\Sound-Identification-Military-Defence\\data\\stress_test",
+  "SPLITS_DIR": "S:\\Sound-Identification-Military-Defence\\data\\splits",
+  "SPLIT_CSV": "S:\\Sound-Identification-Military-Defence\\data\\splits\\split.csv",
+  "MODELS_DIR": "S:\\Sound-Identification-Military-Defence\\models",
+  "BEST_MODEL_DIR": "S:\\Sound-Identification-Military-Defence\\models\\best_model",
+  "REPORTS_DIR": "S:\\Sound-Identification-Military-Defence\\reports",
+  "PLOTS_DIR": "S:\\Sound-Identification-Military-Defence\\reports\\plots",
+  "VALID_LOSS_RANGE": [
+    0.001,
+    5.0
+  ],
+  "VALID_ACC_RANGE": [
+    0.1,
+    1.0
+  ],
+  "VALID_F1_RANGE": [
+    0.05,
+    1.0
+  ],
+  "VALID_AUC_RANGE": [
+    0.4,
+    1.0
+  ],
+  "SUSPICIOUS_ACC_THRESHOLD": 0.98,
+  "GPU_MEMORY_LIMIT": 4096,
+  "ALLOW_GPU_GROWTH": true,
+  "CONFIDENCE_LEVELS": {
+    "CRITICAL": 0.9,
+    "HIGH": 0.75,
+    "MEDIUM": 0.5,
+    "LOW": 0.3,
+    "NEGLIGIBLE": 0.0
+  },
+  "initialize": "<classmethod(<function Config.initialize at 0x000001F7A488ACA0>)>",
+  "create_directories": "<classmethod(<function Config.create_directories at 0x000001F7A488AD40>)>",
+  "save_config": "<classmethod(<function Config.save_config at 0x000001F7A488ADE0>)>",
+  "set_seeds": "<classmethod(<function Config.set_seeds at 0x000001F7A488AE80>)>"
+}
